@@ -7,12 +7,12 @@ body {
 li {
   display: inline;
   color: white;
-  padding-right: 10px;
+  padding-right: 20px;
   text-decoration: none;
 }
 
 nav {
-  border-bottom: 10px;
+  border-bottom: 3px;
   border-style: solid;
   padding-bottom: 5px;
 }
