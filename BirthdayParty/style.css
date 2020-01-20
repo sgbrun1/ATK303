@@ -6,5 +6,7 @@ body {
 li {
    display: inline;
    color: white;
+ }
+ nav {
    padding-right: 10px;
  }
