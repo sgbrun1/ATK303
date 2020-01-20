@@ -2,7 +2,7 @@ body {
   background-color: black;
   color: white;
 }
- nav {
+li {
    display: inline;
    color: white;
  }
