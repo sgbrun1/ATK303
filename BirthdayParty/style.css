@@ -8,13 +8,13 @@ li {
   display: inline;
   color: white;
   padding-right: 10px;
-  padding-bottom: 5px;
   text-decoration: none;
 }
 
 nav {
-  border-bottom: 50px;
+  border-bottom: 10px;
   border-style: solid;
+  padding-bottom: 5px;
 }
 
 a:visited {
