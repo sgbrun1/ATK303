@@ -6,4 +6,5 @@ body {
 li {
    display: inline;
    color: white;
+   padding-right: 10px;
  }
