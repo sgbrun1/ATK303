@@ -7,10 +7,11 @@ li {
    display: inline;
    color: white;
    border-bottom: 10px;
- }
- nav {
    padding-right: 10px;
+   padding-bottom: 5px;
+
  }
+
 a:visited {
   color: white;
 }
