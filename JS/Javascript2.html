@@ -1,0 +1,67 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Single page Scoller</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $('nav a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 0
+        }, 1000);
+        event.preventDefault();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1 id="Home">Single Page Scroller Example </h1>
+  <nav>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Videos">Videos</a></li>
+      <li><a href="#Photos">Photos</a></li>
+    </ul>
+  </nav>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nulla sed mauris efficitur finibus. Maecenas sit amet arcu neque. Nunc rutrum auctor posuere. Mauris mauris enim, ultricies sit amet lacus quis, auctor placerat lacus. In
+    metus tellus, laoreet vitae mollis non, sodales non eros. Sed pellentesque dolor id diam tincidunt, at bibendum sapien ultrices. Aenean orci elit, semper tempus ex vel, bibendum gravida ligula.
+
+    Aenean in auctor lorem. Aenean nec dignissim justo. Mauris congue lacus non arcu laoreet laoreet. Aliquam enim ipsum, mollis sit amet lectus nec, ornare sollicitudin tellus. Curabitur ut efficitur leo, sed cursus turpis. Donec vel libero et enim
+    congue bibendum ac vitae mi. Cras sed velit ut ligula suscipit mollis. Suspendisse gravida nisi felis, non commodo ante malesuada non. Phasellus et cursus mi. Vivamus et ornare felis, sed ultrices magna. Proin viverra, nisl iaculis iaculis
+    congue, leo augue tempus lacus, condimentum venenatis turpis purus sed purus. Mauris eget mollis tortor. In sed orci vel massa porttitor porttitor.</p>
+
+  <h2 id="Videos"> Videos</h2>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nulla sed mauris efficitur finibus. Maecenas sit amet arcu neque. Nunc rutrum auctor posuere. Mauris mauris enim, ultricies sit amet lacus quis, auctor placerat lacus. In
+    metus tellus, laoreet vitae mollis non, sodales non eros. Sed pellentesque dolor id diam tincidunt, at bibendum sapien ultrices. Aenean orci elit, semper tempus ex vel, bibendum gravida ligula.
+
+    Aenean in auctor lorem. Aenean nec dignissim justo. Mauris congue lacus non arcu laoreet laoreet. Aliquam enim ipsum, mollis sit amet lectus nec, ornare sollicitudin tellus. Curabitur ut efficitur leo, sed cursus turpis. Donec vel libero et enim
+    congue bibendum ac vitae mi. Cras sed velit ut ligula suscipit mollis. Suspendisse gravida nisi felis, non commodo ante malesuada non. Phasellus et cursus mi. Vivamus et ornare felis, sed ultrices magna. Proin viverra, nisl iaculis iaculis
+    congue, leo augue tempus lacus, condimentum venenatis turpis purus sed purus. Mauris eget mollis tortor. In sed orci vel massa porttitor porttitor. </p>
+
+  <h2 id="Photos"> Photos</h2>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nulla sed mauris efficitur finibus. Maecenas sit amet arcu neque. Nunc rutrum auctor posuere. Mauris mauris enim, ultricies sit amet lacus quis, auctor placerat lacus. In
+    metus tellus, laoreet vitae mollis non, sodales non eros. Sed pellentesque dolor id diam tincidunt, at bibendum sapien ultrices. Aenean orci elit, semper tempus ex vel, bibendum gravida ligula.
+
+    Aenean in auctor lorem. Aenean nec dignissim justo. Mauris congue lacus non arcu laoreet laoreet. Aliquam enim ipsum, mollis sit amet lectus nec, ornare sollicitudin tellus. Curabitur ut efficitur leo, sed cursus turpis. Donec vel libero et enim
+    congue bibendum ac vitae mi. Cras sed velit ut ligula suscipit mollis. Suspendisse gravida nisi felis, non commodo ante malesuada non. Phasellus et cursus mi. Vivamus et ornare felis, sed ultrices magna. Proin viverra, nisl iaculis iaculis
+    congue, leo augue tempus lacus, condimentum venenatis turpis purus sed purus. Mauris eget mollis tortor. In sed orci vel massa porttitor porttitor. </p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nulla sed mauris efficitur finibus. Maecenas sit amet arcu neque. Nunc rutrum auctor posuere. Mauris mauris enim, ultricies sit amet lacus quis, auctor placerat lacus. In
+  metus tellus, laoreet vitae mollis non, sodales non eros. Sed pellentesque dolor id diam tincidunt, at bibendum sapien ultrices. Aenean orci elit, semper tempus ex vel, bibendum gravida ligula.
+
+  Aenean in auctor lorem. Aenean nec dignissim justo. Mauris congue lacus non arcu laoreet laoreet. Aliquam enim ipsum, mollis sit amet lectus nec, ornare sollicitudin tellus. Curabitur ut efficitur leo, sed cursus turpis. Donec vel libero et enim
+  congue bibendum ac vitae mi. Cras sed velit ut ligula suscipit mollis. Suspendisse gravida nisi felis, non commodo ante malesuada non. Phasellus et cursus mi. Vivamus et ornare felis, sed ultrices magna. Proin viverra, nisl iaculis iaculis
+  congue, leo augue tempus lacus, condimentum venenatis turpis purus sed purus. Mauris eget mollis tortor. In sed orci vel massa porttitor porttitor. </p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nulla sed mauris efficitur finibus. Maecenas sit amet arcu neque. Nunc rutrum auctor posuere. Mauris mauris enim, ultricies sit amet lacus quis, auctor placerat lacus. In
+  metus tellus, laoreet vitae mollis non, sodales non eros. Sed pellentesque dolor id diam tincidunt, at bibendum sapien ultrices. Aenean orci elit, semper tempus ex vel, bibendum gravida ligula.
+
+  Aenean in auctor lorem. Aenean nec dignissim justo. Mauris congue lacus non arcu laoreet laoreet. Aliquam enim ipsum, mollis sit amet lectus nec, ornare sollicitudin tellus. Curabitur ut efficitur leo, sed cursus turpis. Donec vel libero et enim
+  congue bibendum ac vitae mi. Cras sed velit ut ligula suscipit mollis. Suspendisse gravida nisi felis, non commodo ante malesuada non. Phasellus et cursus mi. Vivamus et ornare felis, sed ultrices magna. Proin viverra, nisl iaculis iaculis
+  congue, leo augue tempus lacus, condimentum venenatis turpis purus sed purus. Mauris eget mollis tortor. In sed orci vel massa porttitor porttitor. </p>
+
+</body>
+
+</html>

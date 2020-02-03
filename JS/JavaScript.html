@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JQuery Notes</title>
+  <!-- Script in the <head> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $("#mybutton").click(function() {
+        $(".peekaboo").fadeToggle();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1 class="peekaboo"> Wowie, a header!! </h1>
+  <button id="mybutton">Click Me!</button>
+  <p class="peekaboo"> This is a block of text.
+
+<!-- If you put the below code at the bottom, you don't need the $(document).ready(function() {
+  <script>
+    $(document).ready(function() {
+      $("#mybutton").click(function() {
+        $(".peekaboo").fadeToggle();
+      });
+    });
+  </script>
+-->
+
+</body>
+
+</html>
