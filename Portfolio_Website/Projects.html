@@ -35,8 +35,18 @@
 	</nav>
 
 	<div id="elastic_grid_demo"></div>
-<script type="jquery-elastic-grid-master/text/javascript">
-	$(document)(function() {
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/classie.js"></script>
+
+
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/elastic_grid.js"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function() {
 		$("#elastic_grid_demo").elastic_grid({
 			'showAllText': 'All',
 			'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
