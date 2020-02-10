@@ -1,45 +1,39 @@
 @charset "utf-8";
+
 /* CSS Document */
 h1 {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-size: 35pt;
-	margin-left: 35px;
-	padding: 0px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  font-size: 35pt;
+  margin-left: 35px;
+  padding: 0px;
 }
 
 nav {
-	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
-	font-size: 15pt;
-	list-style-type: none;
-	border-bottom-style: solid;
-	border-width: 5px;
-	border-color: gold;
-	margin-right: 100px;
-	margin-left: 60px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+  font-size: 15pt;
+  list-style-type: none;
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-color: gold;
+  margin-right: 100px;
+  margin-left: 60px;
 }
 
 li {
-	display: inline;
-	padding-left: 7px;
-	padding-right: 7px;
-	padding-bottom: 7px;
+  display: inline;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
 }
 
-body {
-	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
-	font-size: 12pt;
-
+.bio {
+  margin-left: 100px;
+  margin-right: 250px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+  font-size: 12pt;
 }
 
-img {
-	float: right;
-	margin-right: 150px;
-}
-p {
-	margin-left: 100px;
-	margin-right: 250px;
-}
-footer {
+/*footer {
 	position:absolute;
 	bottom: 0;
 	float: none;
@@ -50,8 +44,60 @@ footer {
 	align-content:center;
 }
 
+
 .copyright {
 	float: right;
 	margin: 0px;
 	align-content: center;
 }
+*/
+.card {
+  position: absolute;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.card .front {
+  position: absolute;
+  margin-left: 1050px;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card:hover .front {
+  transform: rotateX(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.card .back {
+  position: absolute;
+  margin-left: 1050px;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+.card .back .details {
+  color: white;
+  text-align: center;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  padding-top: 50px;
+}
+
+/* a:visited {
+	color: white;
+} */
