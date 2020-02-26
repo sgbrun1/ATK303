@@ -55,3 +55,6 @@ h2 {
 @media all and (min-width: 30em){
   h1 { color: blue; }
 }
+@media all and (min-width: 50em){
+  h1 { color: red; padding-bottom: .1em; }
+}
