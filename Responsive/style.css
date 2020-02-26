@@ -6,13 +6,15 @@ body{
   margin: 0;
 }
 nav {
-  border-bottom: #807E7C;
   background-color: #BFBDBA;
   position: fixed;
   top: 0em;
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
 
 
 }
@@ -31,6 +33,7 @@ h1 {
   border-bottom: 20%;
   border-bottom-color: black;
   border-bottom-style: solid;
+  padding-top: 1.5em;
 }
 h2 {
   border-bottom: 20%;
@@ -53,8 +56,11 @@ h2 {
 }
 
 @media all and (min-width: 30em){
-  h1 { color: blue; }
+  h1 { color: blue; padding-top: 0;}
+  nav {display: inline;}
+
 }
 @media all and (min-width: 50em){
   h1 { color: red; padding-bottom: .1em; }
+  /* nav {display: grid; grid-template-columns: 1fr 1fr;} */
 }
