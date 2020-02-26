@@ -1,0 +1,57 @@
+/* Default Layout (Mobile) */
+
+body{
+  font-family: 'Josefin Sans' ;
+  padding-top: 2em;
+  margin: 0;
+}
+nav {
+  border-bottom: #807E7C;
+  background-color: #BFBDBA;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+
+}
+nav a{
+  text-decoration: none;
+    padding: 1em;
+}
+nav a:visited {
+  color: black;
+}
+nav a:hover {
+  color:#E6E3DF
+}
+h1 {
+  font-family: 'BioRhyme Expanded';
+  border-bottom: 20%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+h2 {
+  border-bottom: 20%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  margin-right: 1em;
+
+}
+#dog1 {
+  width: 100%;
+}
+#dog2 {
+  width: 100%;
+}
+#dog3 {
+  width: 100%;
+}
+#dog4 {
+  width: 100%;
+}
+
+@media all and (min-width: 30em){
+  h1 { color: blue; }
+}
