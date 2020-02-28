@@ -10,11 +10,10 @@ nav {
   position: fixed;
   top: 0em;
   width: 100%;
-  /* padding-top: 1em;
-  padding-bottom: 1em; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
+
 
 
 }
@@ -57,10 +56,12 @@ h2 {
 
 @media all and (min-width: 30em){
   h1 { color: blue; padding-top: 0;}
-  nav {display: inline;}
+  nav {display: inline;padding-top: 1em; padding-bottom: 1em;}
 
 }
 @media all and (min-width: 50em){
   h1 { color: red; padding-bottom: .1em; }
-  /* nav {display: grid; grid-template-columns: 1fr 1fr;} */
+  nav {  padding-top: 1em; padding-bottom: 1em;}
+  .main {display: grid; grid-template-columns: 1fr, 1fr;}
+
 }
