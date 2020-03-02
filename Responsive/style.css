@@ -14,12 +14,11 @@ nav {
   grid-template-columns: 1fr 1fr;
   align-content: center;
 
-
-
 }
 nav a{
   text-decoration: none;
     padding: 1em;
+    color: black;
 }
 nav a:visited {
   color: black;
@@ -55,13 +54,16 @@ h2 {
 }
 
 @media all and (min-width: 30em){
-  h1 { color: blue; padding-top: 0;}
+  h1 { padding-top: 0;}
   nav {display: inline;padding-top: 1em; padding-bottom: 1em;}
+  p {display: grid; grid-template-columns: repeat(1, 1fr);;}
 
 }
 @media all and (min-width: 50em){
-  h1 { color: red; padding-bottom: .1em; }
+  h1 { padding-bottom: .1em; }
   nav {  padding-top: 1em; padding-bottom: 1em;}
-  .main {display: grid; grid-template-columns: 1fr, 1fr;}
+
+
+
 
 }
