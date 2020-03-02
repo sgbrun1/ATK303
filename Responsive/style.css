@@ -56,7 +56,7 @@ h2 {
 @media all and (min-width: 30em){
   h1 { padding-top: 0;}
   nav {display: inline;padding-top: 1em; padding-bottom: 1em;}
-  p {display: grid; grid-template-columns: repeat(1, 1fr);;}
+  p {display: grid; grid-template-columns: repeat(1, 1fr);}
 
 }
 @media all and (min-width: 50em){
