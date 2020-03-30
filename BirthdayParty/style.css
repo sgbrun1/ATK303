@@ -18,6 +18,7 @@ nav {
   margin-top: 0px;
   font-size: 25px;
 }
+
 h1 {
   color: white;
 }
@@ -65,7 +66,8 @@ iframe {
 }
 
 .Cherpics {
-  float: right;
-  width: 620px;
-  height: 360px;
+  margin-top: 100px;
+  float: left;
+  width: 320px;
+  height: 160px;
 }
