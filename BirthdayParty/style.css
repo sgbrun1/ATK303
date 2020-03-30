@@ -18,7 +18,9 @@ nav {
   margin-top: 0px;
   font-size: 25px;
 }
-
+h1 {
+  color: black;
+}
 a {
   text-decoration: none;
 }
